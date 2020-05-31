@@ -8,11 +8,12 @@
 		<version>2.2.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bezkoder</groupId>
-	<artifactId>spring-boot-data-jpa</artifactId>
+	<groupId>com.bookmark</groupId>
+	<artifactId>spring-boot-backend-task</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>spring-boot-data-jpa</name>
-	<description>Demo project for Spring Boot Apis CRUD using Spring Data JPA</description>
+	<description>bookmark Task</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -34,21 +35,11 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+	
 	</dependencies>
 
 	<build>
+	    <finalName>spring-boot-backend-task</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
